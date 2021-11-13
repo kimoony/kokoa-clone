@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: tomato;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #000;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.solid {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  background-color: teal;
+  margin: 20px;
+}
+
+.dashed {
+  width: 80%;
+  height: 50px;
+  border: 3px dashed #fff;
+  background-color: teal;
+}
