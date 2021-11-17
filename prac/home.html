@@ -97,6 +97,24 @@
     /* img:hover {
       transform: rotateX(360deg) scale(0.5);
     } */
+    /* Media Queries */
+    
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    div {
+      background-color: steelblue;
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+      div {
+        background-color: blueviolet;
+      }
+    }
   </style>
 </head>
 <body>
@@ -161,7 +179,7 @@
     <!-- Transformations -->
     <!-- <img src="/스크린샷 2021-11-09 01.24.59.png" alt="image"> -->
     <!-- css report_03 -->
-    <div>
+    <!-- <div>
       <div class="dot">
         <div></div>
         <div></div>
@@ -174,6 +192,8 @@
         <div></div>
         <div></div>
       </div>
-    </div>
+    </div> -->
+    <!-- Media Queries -->
+    <div></div>
 </body>
 </html>
