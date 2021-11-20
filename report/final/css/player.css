@@ -42,7 +42,7 @@ main {
 }
 .music-play__title {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .music-play__singer {
@@ -61,6 +61,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  color: #2679F2
 }
 .play-btn div:nth-child(1),
 .play-btn div:nth-child(5) {

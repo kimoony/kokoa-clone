@@ -12,7 +12,7 @@ li {
 .bar {
   position: absolute;
   border-radius: 10px; 
-  background-color: #000;
+  background-color: #2679F2;
   height: 5px;
 }
 .bar:after  {
@@ -25,8 +25,8 @@ li {
   top: -3px;
   right: 0;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #2679F2;
 }
 .css-progressbar {
-  width: 40%; 
+  width: 33%; 
 }

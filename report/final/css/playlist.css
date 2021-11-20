@@ -1,10 +1,137 @@
 @import "./reset.css";
 @import "./status-bar.css";
 @import "./container.css";
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
+body {
+  font-family: 'Yeon Sung', cursive;
+  background-color: lightgray;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.profile__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .profile__image img{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 5px 10px 26px gray;
+  box-shadow: 5px 10px 15px #091377;
+}
+.profile__name {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.profile__genre {
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 50px;
+}
+.btn-box__shuffle div{
+  width: 70px;
+  height: auto;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #2679F2;
+  border-radius:30px;
+}
+.btn-box__like div {
+  width: 70px;
+  height: auto;
+  padding: 10px 30px;
+  color: red;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 5px 26px lightgray;
+}
+.btn-box__like div span {
+  color: gray;
+}
+
+.list-group {
+  margin-top: 20px;
+  height: 330px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+.list-group::-webkit-scrollbar{ 
+  display:none; 
+}
+.playlist {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: 20px 0;
+}
+ul .playlist:nth-child(2) {
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 1px #2679F2;
+  width: 90%;
+  margin-left: 1px;
+}
+.playlist__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.playlist__info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.playlist__singer {
+  color: lightgray;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+.playlist__menu i {
+  margin-left: 50px;
+  color: lightgray;
+}
+
+.control-box {
+  margin-top: 15px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2679F2;
+  color: #fff;
+  border-radius: 50px;
+}
+.control-box__singer {
+  margin-bottom: 10px;
+  color: lightgray;
+  opacity: .7;
+  font-size: 14px;
+}
+.control-box__play-btn {
+  position: relative;
+}
+.control-box__play-btn span:nth-child(1) {
+  position: absolute;
+  left: -100px;
+}
+.control-box__play-btn span:nth-child(2) {
+  position: absolute;
+  left: -50px;
 }
