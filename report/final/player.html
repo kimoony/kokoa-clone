@@ -8,7 +8,58 @@
   <link rel="stylesheet" href="./css/player.css">
 </head>
 <body>
+  <div class="container">
+    <header class="status-bar">
+      <div class="status-bar__column">
+        <!-- back button -->
+        <span>
+          <i class="fas fa-chevron-left"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <!-- menu button -->
+        <span>
+          <i class="fas fa-ellipsis-v"></i>
+        </span>
+      </div>
+    </header>
   
+    <main>
+      <div class="music-play">
+        <div class="music-play__img">
+          <img src="./image/my love, my suwon.jpeg" alt="image">
+        </div>
+        <div class="music-play__info">
+          <div class="music-play__title">나의 사랑 나의 수원</div>
+          <div class="music-play__singer">노브레인</div>
+        </div>
+      </div>
+  
+      <div class="playing-bar">
+        <div class="playing-bar__time">
+          <span>1:11</span>
+          <span>3:33</span>
+        </div>
+        <div class="playing-bar__paly">
+          <ul>
+            <li>
+              <span class="css-progressbar bar"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  
+    <footer>
+      <div class="play-btn">
+        <div><i class="fas fa-sync-alt"></i></div>
+        <div><i class="fas fa-step-backward fa-2x"></i></div>
+        <div><i class="fas fa-play-circle fa-4x"></i></div>
+        <div><i class="fas fa-step-forward fa-2x"></i></div>
+        <div><i class="fas fa-random"></i></div>
+      </div>
+    </footer>
+  </div>
 
   <script src="https://kit.fontawesome.com/34214446dc.js" crossorigin="anonymous"></script>
 </body>

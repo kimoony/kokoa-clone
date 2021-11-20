@@ -1,0 +1,32 @@
+ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+li {
+    background-color: lightgray;
+    height:5px; 
+    border-radius:10px;
+}
+.bar {
+  position: absolute;
+  border-radius: 10px; 
+  background-color: #000;
+  height: 5px;
+}
+.bar:after  {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: ""; 
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  border-radius: 50%;
+  background-color: #000;
+}
+.css-progressbar {
+  width: 40%; 
+}

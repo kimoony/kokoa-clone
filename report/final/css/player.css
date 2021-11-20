@@ -1,2 +1,68 @@
-@import "./reset.css"
+@import "./reset.css";
+@import "./status-bar.css";
+@import "./container.css";
+@import "./playbar.css";
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
+body {
+  font-family: 'Yeon Sung', cursive;
+  background-color: lightgray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;;
+  margin-bottom: 100px;
+}
+
+.music-play {
+  width: 100%;
+  height: 400px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+.music-play__img img{
+  width: 250px;
+  height: 250px;
+  /* padding: 10px; */
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 5px 10px 26px #114A78;
+}
+.music-play__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music-play__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.music-play__singer {
+  font-size: 20px;
+  color: gray;
+}
+
+.playing-bar__time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.play-btn div:nth-child(1),
+.play-btn div:nth-child(5) {
+  color: lightgray;
+}
